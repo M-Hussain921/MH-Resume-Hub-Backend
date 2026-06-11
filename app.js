@@ -1,13 +1,14 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import morgan from 'morgan';
 import connectDB from './config/mongo.config.js';
 import resumeRouter from './routes/resume.route.js';
 import adminRouter from './routes/admin.route.js';
 
-dotenv.config();
 connectDB();
 
 const app = express();
