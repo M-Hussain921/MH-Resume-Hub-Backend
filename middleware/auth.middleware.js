@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import AppError from "../utils/AppError.js";
+import AppError from "../utils/appError.js";
 import catchAsync from "../utils/catchAsync.js";
 
 const protectAdmin=catchAsync(async(req,res,next)=>{

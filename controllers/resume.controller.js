@@ -1,5 +1,5 @@
 import Resume from "../models/resume.js";
-import AppError from "../utils/AppError.js";
+import AppError from "../utils/appError.js";
 import catchAsync from "../utils/catchAsync.js";
 
 export const createResume = catchAsync(async (req, res, next) => {
